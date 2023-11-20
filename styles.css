@@ -1,0 +1,31 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+  }
+.btn {
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 700;
+}
+.btn-primary {
+    background-color: #FFA500;
+    color: #333333;
+}
+.btn-secondary {
+    background-color: transparent;
+    color: #ADD8E6;
+    border: 2px solid #ADD8E6;
+}
+.feature-icon {
+    display: inline-block;
+    margin-right: 8px;
+    color: red;
+}
+
+
+#images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
