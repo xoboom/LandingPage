@@ -29,3 +29,19 @@ body {
     gap: 16px;
 }
 
+#images img {
+    margin: 0 8px;
+    width: 250px;
+    height: auto;
+}
+
+@media (max-width: 858px) {
+    #images {
+        flex-direction: column;
+        align-items: center;
+    }
+    #images img {
+        width: 80%;
+        height: auto;
+    }
+}
