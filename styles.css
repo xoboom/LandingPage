@@ -1,47 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@400;500&display=swap');
+
+* {
+    font-family: Inter, Roboto, sans-serif;
+}
+
 body {
-    font-family: 'Open Sans', sans-serif;
-  }
-.btn {
-    padding: 8px 16px;
-    border-radius: 20px;
-    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-image: linear-gradient(to right, #290729, #420B41);
 }
-.btn-primary {
-    background-color: #FFA500;
-    color: #333333;
+
+.header {
+    background-image: linear-gradient(to right, rgba(204, 43, 94, 0.35), rgba(117, 58, 136, 0.35));
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    height: 55px;
+    align-items: center;
+    border-bottom: 1px solid black;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.37 );
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
 }
-.btn-secondary {
-    background-color: transparent;
-    color: #ADD8E6;
-    border: 2px solid #ADD8E6;
+
+.CompanyName {
+    padding: 0px 10px;
 }
-.feature-icon {
-    display: inline-block;
-    margin-right: 8px;
+
+.sub-header,
+.subs {
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+    padding: 0px 15px; 
+}
+.sub-header {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-banner {
+    background-image: url('TensegrityManBG.png'); /* Add your background image here */
+    background-size: cover; /* Cover the entire area of the element */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    text-align: center;
+    padding: 95px 10px;
+}
+
+.main-banner span {
     color: red;
 }
 
-
-#images {
+.main-banner h1 {
+    margin: 0;
+    color: white;
+}
+.main-banner p {
+    color: white;
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 16px;
+}
+.main-banner ul {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 10px 30%;
 }
 
-#images img {
-    margin: 0 8px;
-    width: 250px;
+.main-banner #checklist {
+    justify-content: space-between;
+}
+
+.main-banner img {
+    width: 80%;
+    height: 10rem;
+    object-fit: cover;
+}
+
+.btn {
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: 700;
+    
+}
+.btn-primary {
+    background-image: linear-gradient(to right, #FFB334, #86A8E7, #FB5FF8);
+    border: none;
+    padding: 12px 20px;
+    margin: 10px;
+    cursor: pointer;
+    color: #333333;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #ADD8E6;
+    border: 4px solid #ADD8E6;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background: black;
+    color: white;
+}
+
+.feature-item {
+    width: 30%;
+    text-align: center;
+}
+
+.feature-item img {
+    max-width: 100%;
     height: auto;
 }
 
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+}
+
 @media (max-width: 858px) {
-    #images {
+    .features {
         flex-direction: column;
         align-items: center;
     }
-    #images img {
-        width: 80%;
-        height: auto;
+    .feature-item {
+        width: 100%;
+    }
+    .feature-item img {
+        width: 90% !important;
+        height: auto !important;
+    }
+    .main-banner ul {
+        padding: 0px 20px;
+    }
+    .main-banner {
+        background-position: center; /* Center the image in the element */
     }
 }
