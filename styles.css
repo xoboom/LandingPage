@@ -8,7 +8,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    background-image: linear-gradient(to right, #290729, #420B41);
+    background-image: linear-gradient(to right, #42275a, #734b6d);
 }
 
 .header {
@@ -23,8 +23,8 @@ body {
     position: fixed;
     width: 100%;
     box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.2 );
-    backdrop-filter: blur( 5px );
-    -webkit-backdrop-filter: blur( 5px );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
 }
 
 .CompanyName {
@@ -41,6 +41,11 @@ body {
 .sub-header {
     display: flex;
     flex-direction: row;
+}
+
+.sub-header, .subs:hover {
+    color: cornflowerblue;
+    transition: ease-in-out 0.2s;
 }
 
 .main-banner {
@@ -84,17 +89,27 @@ body {
 
 .btn {
     padding: 8px 16px;
-    border-radius: 5px;
+    border-radius: 6px;
     font-weight: 700;
-    
+    font-size: large;
 }
 .btn-primary {
-    background-image: linear-gradient(to right, #FFB334, #86A8E7, #FB5FF8);
+    background-color: #f7a32e;
     border: none;
     padding: 12px 20px;
     margin: 10px;
     cursor: pointer;
     color: #333333;
+    border-radius: 6px;
+    box-shadow: inset 0 2px 2px rgba(255, 255, 255, 0.2), 
+                0 4px 6px rgba(0, 0, 0, 0.2);
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+    background-image: linear-gradient(to bottom, #f8b133, #f7a32e);
+    transition: all 0.1s ease-in-out;
+}
+.btn-primary:active {
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.3);
+    transform: translateY(2px);
 }
 
 .btn-secondary {
@@ -110,7 +125,7 @@ body {
     padding: 20px;
     background: black;
     color: white;
-    background-image: linear-gradient(to right, #290729, #420B41);
+    background-image: linear-gradient(to right, #42275a, #734b6d);
 }
 
 .feature-item {
