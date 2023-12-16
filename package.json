@@ -1,0 +1,15 @@
+{
+    "name": "optimove-site",
+    "version": "1.0.0",
+    "description": "OptiMove company website",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js"
+    },
+    "keywords": ["optimove", "fitness", "mechanics", "health", "optimize", "tensegrity", "gait"],
+    "author": "boomxo",
+    "license": "ISC",
+    "dependencies": {
+      "express": "^4.17.1"
+    }
+  }
